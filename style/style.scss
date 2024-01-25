@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+
+$white: #ede9d0;
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a {
+  // color: #292929;
+  text-decoration: none;
+}
+
+body {
+  // margin: 0.5em;
+}
+
+nav {
+  padding-inline: 7em;
+  // width: 100%-30em;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  background-color: #86aee1;
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    // font-weight:bold;
+    img {
+      width: 2em;
+      border-radius: 50%;
+      background-color: $white;
+      // transform: rotate(45deg);
+    }
+  }
+
+  .nav_items {
+    margin: 0 2em 0 auto;
+    display: inherit;
+    .nav_item {
+      text-transform: uppercase;
+
+      font-weight: 520;
+      font-size: 1.2rem;
+      letter-spacing: 0.15em;
+      padding: 1em;
+      a {
+        color: $white;
+      }
+      a:hover {
+        color: #e44712;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+#slider {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 90vh;
+  background-color: #222;
+  // justify-content: center;
+  figure {
+    img {
+      position: absolute;
+      top: 0;
+      filter: brightness(50%);
+
+      left: 0;
+      width: 100%;
+      margin: 0;
+      object-fit: cover;
+      // z-index: -1;
+      opacity: 0;
+      transition: opacity 0.75s ease-in-out;
+      // height: 35vw;
+    }
+  }
+  .slider-header {
+    z-index: 2;
+    color: $white;
+    h1 {
+      font-size: 6rem;font-family: 'Parisienne', cursive;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+// #slider {
+//   animation: load-in 0.75s;
+//   overflow: hidden;
+//   figure {
+//     position: relative;
+//     // display: flex;
+//     width: 400%;
+//     height: 90vh;
+//     margin: 0;
+//     overflow: hidden;
+//     left: 0;
+//     animation: 15s slider infinite;
+//     img {
+//       width: 25%;
+//       float: left;
+//       // height: 35vw;
+//     }
+//   }
+// }
+
+// @keyframes slider {
+//   0% {
+//     left: 0;
+//   }
+//   25% {
+//     left: 0%;
+//   }
+//   35% {
+//     left: -100%;
+//   }
+//   60% {
+//     left: -100%;
+//   }
+//   70% {
+//     left: -200%;
+//   }
+//   90% {
+//     left: -200%;
+//   }
+//   100% {
+//     left: -300%;
+//   }
+// }

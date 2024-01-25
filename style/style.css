@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,600");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding-inline: 7em;
+  display: flex;
+  font-family: "Roboto Mono", monospace;
+  background-color: #86aee1;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+nav .logo img {
+  width: 2em;
+  border-radius: 50%;
+  background-color: #ede9d0;
+}
+nav .nav_items {
+  margin: 0 2em 0 auto;
+  display: inherit;
+}
+nav .nav_items .nav_item {
+  text-transform: uppercase;
+  font-weight: 520;
+  font-size: 1.2rem;
+  letter-spacing: 0.15em;
+  padding: 1em;
+}
+nav .nav_items .nav_item a {
+  color: #ede9d0;
+}
+nav .nav_items .nav_item a:hover {
+  color: #e44712;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#slider {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 90vh;
+  background-color: #222;
+}
+#slider figure img {
+  position: absolute;
+  top: 0;
+  filter: brightness(50%);
+  left: 0;
+  width: 100%;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.75s ease-in-out;
+}
+#slider .slider-header {
+  z-index: 2;
+  color: #ede9d0;
+}
+#slider .slider-header h1 {
+  font-size: 6rem;
+  font-family: "Parisienne", cursive;
+}
+#slider .slider-header p {
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
